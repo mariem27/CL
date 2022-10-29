@@ -7,7 +7,7 @@ pipeline {
                     checkout([$class: 'GitSCM' , branches: [[name: '*/mariem']],
                         userRemoteConfigs: [[
 	                    url : 'https://github.com/mariem27/CL.git',
-                            credentialsId:'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']]])
+                            credentialsId:'59ba01ab-9df5-485e-bb56-c2c8c6b29cd6']]])
         }
         }
 }
