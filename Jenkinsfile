@@ -10,6 +10,15 @@ pipeline {
                             credentialsId:'59ba01ab-9df5-485e-bb56-c2c8c6b29cd6']]])
         }
         }
+
+}
+        stage('Build')
+         {
+              steps {
+                    script{
+                       sh "ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml"
+}
+}
 }
 }
 }
