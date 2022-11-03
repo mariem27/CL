@@ -29,7 +29,7 @@ pipeline {
 }
 }
 
-        stage('docker')
+        stage('docker-registry')
          {
               steps {
                     script{
