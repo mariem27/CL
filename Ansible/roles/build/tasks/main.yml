@@ -2,4 +2,4 @@
 #buildproject
     
                  - name: build app
-                   shell: npm install --legacy-peer-deps && ng build --configuration prodution
+                   shell: npm install --legacy-peer-deps && ng build --configuration prod
