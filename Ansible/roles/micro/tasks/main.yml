@@ -1,0 +1,12 @@
+---
+# tasks file for micro
+- name: delete deployment
+  shell: microk8s kubectl delete -n default deployment angular
+- name: delete service
+  shell: microk8s kubectl delete -n default service angular
+- name: create deployment
+  shell: microk8s kubectl create -f angulardeployment.yml
+- name: create service
+  shell: microk8s kubectl create -f angularservice.yml
+
+

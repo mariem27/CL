@@ -37,6 +37,16 @@ pipeline {
 }
 }
 }
+        stage('microk8s')
+         {
+              steps {
+                    script{
+                       sh "ansible-playbook Ansible/micro.yml -i Ansible/inventory/host.yml"
+                    
+                       
+}
+}
+}
 }
 }
        
